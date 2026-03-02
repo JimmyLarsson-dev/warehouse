@@ -10,9 +10,9 @@ COPY target/inventory-0.0.1-SNAPSHOT.jar inventory-application.jar
 EXPOSE 8080
 
 # Set environment variables for the database configuration (can be overridden at runtime)
-ENV SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/inventory
-ENV SPRING_DATASOURCE_USERNAME=postgres
-ENV SPRING_DATASOURCE_PASSWORD=cup11mouse
+#ENV SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/inventory
+#ENV SPRING_DATASOURCE_USERNAME=postgres
+#ENV SPRING_DATASOURCE_PASSWORD=cup11mouse
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "inventory-application.jar"]

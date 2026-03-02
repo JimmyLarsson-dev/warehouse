@@ -1,8 +1,12 @@
 package warehouse.inventory;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@AllArgsConstructor
+@Getter
+@Setter
 public class CreateRequest {
     String productName;
     int quantity;
